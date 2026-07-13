@@ -12,6 +12,7 @@ on:
 
 jobs:
   validate-skills:
+    if: ${{ vars.CI_ENABLED == 'true' }}
     name: Validate Skills Format
     runs-on: ubuntu-latest
     
